@@ -953,7 +953,6 @@ button:disabled::after {
 }
 
 .login-page {
-    background: var(--primary-color) !important;
     display: flex;
     align-items: center;
     height: 100vh !important;
