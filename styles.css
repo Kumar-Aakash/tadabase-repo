@@ -85,10 +85,9 @@
     transition: 0.5s;
     border-left: 5px solid var(--highlight-color);
     cursor: pointer;
-    
 }
 .card:hover {
-    box-shadow: 0 4px 10px #Cacaca;
+    box-shadow: 0 4px 10px #cacaca;
     /* background: #DEE6FD; */
     transform: translateY(-2px);
 }
@@ -116,7 +115,6 @@
         opacity: 0;
     }
 } */
-
 
 .card i {
     background: var(--light-bg);
@@ -344,8 +342,9 @@ table .btn-success {
 .table-wrap {
     overflow-x: auto;
 }
-.table-actions button, .table-action-wrap button {
-    color:var(--white) !important;
+.table-actions button,
+.table-action-wrap button {
+    color: var(--white) !important;
     background: var(--primary-color) !important;
     background-image: none;
 }
@@ -529,12 +528,12 @@ table .btn-success {
 }
 
 .stats-card:hover {
-    box-shadow: 0 4px 10px #Cacaca;
+    box-shadow: 0 4px 10px #cacaca;
     cursor: pointer;
 }
 
 .stats-card:hover:before {
-    content: '';
+    content: "";
     position: absolute;
     left: 50%;
     top: 50%;
@@ -823,25 +822,21 @@ button:disabled::after {
 .btn-info {
     background-color: rgb(23, 162, 184) !important; /* Cyan */
     color: var(--white) !important;
-
 }
 
 .btn-danger {
     background-color: rgb(220, 53, 69) !important; /* Red */
     color: var(--white) !important;
-
 }
 
 .btn-success {
     background-color: rgb(40, 167, 69) !important; /* Green */
     color: var(--white) !important;
-
 }
 
 .btn-warning {
     background-color: rgb(255, 193, 7) !important; /* Yellow */
     color: var(--white) !important;
-
 }
 
 .btn:hover,
@@ -955,4 +950,23 @@ button:disabled::after {
 
 .field-name table {
     margin: 0 !important;
+}
+
+.login-page {
+    background: var(--primary-color) !important;
+    display: flex;
+    align-items: center;
+    height: 100vh !important;
+    padding: 0 !important;
+    background: hsla(195, 86%, 50%, 1);
+    background: linear-gradient(90deg, hsla(195, 86%, 50%, 1) 0%, hsla(236, 93%, 65%, 1) 100%);
+    background: -moz-linear-gradient(90deg, hsla(195, 86%, 50%, 1) 0%, hsla(236, 93%, 65%, 1) 100%);
+    background: -webkit-linear-gradient(90deg, hsla(195, 86%, 50%, 1) 0%, hsla(236, 93%, 65%, 1) 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#12B3EB", endColorstr="#5460F9", GradientType=1 );
+}
+.login-page .x-type-row-container {
+    width: 70% !important;
+}
+.login-page .alert-danger {
+    margin-top: 30px;
 }
