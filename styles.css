@@ -86,10 +86,17 @@
     border-left: 5px solid var(--highlight-color);
     cursor: pointer;
 }
-.card:hover {
+.af-card-component {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15) !important;
+    transition: 0.5s;
+    /* border-left: 5px solid var(--highlight-color) !important; */
+    border-radius: 10px !important;
+}
+
+.card,.af-card-component:hover {
     box-shadow: 0 4px 10px #cacaca;
     /* background: #DEE6FD; */
-    transform: translateY(-2px);
+    transform: translateY(-5px);
 }
 
 /* .card:hover:before {
@@ -133,6 +140,7 @@
 .card p {
     font-size: 13px;
     font-weight: bold;
+    text-wrap: nowrap;
 }
 .card h2 {
     font-size: 30px;
@@ -249,6 +257,7 @@ table .btn {
     background-image: none !important;
 }
 
+
 .super-admin-layout-container .orglogo {
     max-height: 150px !important;
 }
@@ -297,7 +306,9 @@ table td {
 }
 
 table .btn-success {
+    background: #ecf0f1 !important;
 }
+
 
 .data-table {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -312,14 +323,21 @@ table .btn-success {
 
 #sidebarCollapse {
     width: 100% !important;
-    background-color: var(--primary-color) !important;
-    color: var(--white) !important;
+    background-color: #dee6fd !important;
+    color: var(--primary-color) !important;
     display: flex;
     align-content: center;
     justify-content: center;
     padding: 10px 0 10px 0 !important;
     align-items: center;
     height: 45px;
+    transition: 0.4s;
+}
+
+#sidebarCollapse:hover {
+    color: #dee6fd !important;
+    background-color: var(--primary-color) !important;
+    opacity: 1 !important;
 }
 .collapse-btn i {
     font-size: 20px;
@@ -341,6 +359,7 @@ table .btn-success {
 }
 .table-wrap {
     overflow-x: auto;
+    padding: 0px 15px 15px 15px;
 }
 .table-actions button,
 .table-action-wrap button {
@@ -457,6 +476,7 @@ table .btn-success {
 .nav-tabs .active a {
     background-color: var(--primary-color) !important;
     color: var(--white) !important;
+    font-weight: 400 !important;
 }
 .nav-tabs a {
     color: var(--primary-color) !important;
@@ -467,6 +487,8 @@ table .btn-success {
     background-color: var(--primary-color) !important;
     color: var(--white) !important;
 }
+
+
 
 /* ------------------------------------------------------------------------------------------------------- */
 /* acct-admin-layout css */
@@ -508,12 +530,23 @@ table .btn-success {
     margin: 0;
     padding: 10px;
 }
+.acct-admin-layout{
+    padding: 0 15px;
+    background: var(--white);
+}
 .acct-admin-footer {
     box-shadow: 10px 25px 20px 15px #333333;
 }
 
 .sa-footer {
     z-index: -1 !important;
+    padding: 5px 0 !important;
+}
+#x_element_layout_4_16 #x_element_layout_4_17 p{
+    margin: 0;
+}
+.sa-footer p{
+    margin: 0 !important;
 }
 .stats-card {
     background-color: #fff;
@@ -830,8 +863,9 @@ button:disabled::after {
 }
 
 .btn-success {
-    background-color: rgb(40, 167, 69) !important; /* Green */
-    color: var(--white) !important;
+    background-color: transparent !important; /* Green */
+    color: var(--primary-color) !important;
+    border: 1px solid var(--primary-color) !important;
 }
 
 .btn-warning {
@@ -841,10 +875,8 @@ button:disabled::after {
 
 .btn:hover,
 .btn:focus {
-    box-shadow:
-        0 2px 4px -1px rgba(0, 0, 0, 0.2),
-        0 4px 5px 0 rgba(0, 0, 0, 0.14),
-        0 1px 10px 0 rgba(0, 0, 0, 0.12);
+    box-shadow:none !important;
+    border: none;
 }
 
 .btn:hover::before,
