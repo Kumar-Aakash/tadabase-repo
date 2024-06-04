@@ -10,12 +10,13 @@
     --black: #333333; /* Dark Grey */
     --light-bg: #3a6bf52b;
     --border-color: #dddddd;
+    --light-shadow-bg:#ecf0f1;
 }
 
 /* Custom scrollbars */
 /* Webkit browsers (Chrome, Safari, etc.) */
 ::-webkit-scrollbar {
-    width: 12px;
+    width: 10px;
     height: 12px;
 }
 
@@ -25,13 +26,13 @@
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 10px;
-    border: 3px solid #f1f1f1;
+    background: var(--light-shadow-bg);
+    border-radius: 50%;
+    border: 2px solid #f1f1f1;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #555;
+    background:  var(--light-shadow-bg);
 }
 
 /* Firefox */
@@ -40,12 +41,6 @@
     scrollbar-color: #888 #f1f1f1;
 }
 
-.super-admin-layout-container .x-type-row-container:first-child {
-    background: var(--white) !important;
-    margin: 0 0 30px 0px;
-    padding: 20px 15px 20px 10px;
-    border-radius: 15px;
-}
 #x_element_layout_1_59 {
     margin-top: 0 !important;
 }
@@ -68,6 +63,12 @@
 }
 .menu-header {
     margin: 0 !important;
+    padding: 20px 15px !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    background: var(--white) !important;
+    margin: 0 0 30px 0px;
+    padding: 20px 15px 20px 10px;
+    border-radius: 15px;
 }
 .custom-header-class .fa-search {
     display: none;
@@ -95,7 +96,6 @@
 
 .card,.af-card-component:hover {
     box-shadow: 0 4px 10px #cacaca;
-    /* background: #DEE6FD; */
     transform: translateY(-5px);
 }
 
@@ -207,9 +207,10 @@ a {
 /* Navbar */
 .navbar,
 .sidebar {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
+    background-color: var(--white);
     padding: 10px;
+    border: none !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important; 
 }
 #sidebar .avatar {
     background-color: var(--primary-color);
@@ -221,17 +222,9 @@ a {
     filter: brightness(20);
 }
 
-.navbar a,
-.sidebar a {
-    color: var(--secondary-color);
-}
 
 .menu .avatar.hide-logo img {
     margin: auto !important;
-}
-.navbar a:hover,
-.sidebar a:hover {
-    color: var(--accent-color);
 }
 
 .btn-warning {
@@ -323,7 +316,7 @@ table .btn-success {
 
 #sidebarCollapse {
     width: 100% !important;
-    background-color: #dee6fd !important;
+    background-color: var(--light-shadow-bg) !important;
     color: var(--primary-color) !important;
     display: flex;
     align-content: center;
@@ -335,7 +328,7 @@ table .btn-success {
 }
 
 #sidebarCollapse:hover {
-    color: #dee6fd !important;
+    color: var(--light-shadow-bg) !important;
     background-color: var(--primary-color) !important;
     opacity: 1 !important;
 }
@@ -359,15 +352,23 @@ table .btn-success {
 }
 .table-wrap {
     overflow-x: auto;
-    padding: 0px 15px 15px 15px;
+    /* padding: 0px 15px 15px 15px; */
+    padding: 0 !important;
 }
+
 .table-actions button,
 .table-action-wrap button {
     color: var(--white) !important;
     background: var(--primary-color) !important;
     background-image: none;
+    margin: 0 5px ;
 }
-
+.t-pagecontainer{
+    padding: 15px;
+}
+#x_element_page_1{
+    padding: 0 !important;
+}
 .tb-no-record-found {
     justify-content: center;
     align-items: center;
@@ -494,11 +495,11 @@ table .btn-success {
 /* acct-admin-layout css */
 .acct-admin-layout .navbar-nav .item a span,
 .acct-admin-layout .navbar-nav .item a i {
-    color: var(--white);
-    font-size: 14px;
+    color: var(--black);
+    font-size: 16px;
 }
 .acct-admin-layout .navbar-nav .item a img {
-    filter: brightness(25);
+    filter: none !important;
 }
 
 .acct-admin-layout .navbar-nav .active a,
@@ -507,10 +508,23 @@ table .btn-success {
     font-weight: bold !important;
 }
 .acct-admin-layout .navbar-nav .dropdown-menu {
-    background-color: var(--primary-color) !important;
+    background-color: var(--white) !important;
+    color: var(--black) !important;
+    border: none;
+    border-radius: 10px;
 }
 .acct-admin-layout .navbar-nav .dropdown-menu .item a span {
-    color: var(--white) !important;
+    color: var(--black) !important;
+    font-size: 14px;
+}
+
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+    background-color: var(--light-shadow-bg) !important;
+    color: var(--black);
+}
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus{
+    background-color: var(--light-shadow-bg) !important;
+    color: var(--primary-color);
 }
 
 .acct-admin-layout .af-card-component {
@@ -531,7 +545,7 @@ table .btn-success {
     padding: 10px;
 }
 .acct-admin-layout{
-    padding: 0 15px;
+    padding: 0px;
     background: var(--white);
 }
 .acct-admin-footer {
@@ -641,17 +655,7 @@ table .btn-success {
         transform 0.3s ease; /* Transition for color and transform */
 }
 
-/* Specific styling for active tab */
-.nav-tabs > li.active > a {
-    color: #333; /* Darker text for active tab */
-    border: 1px solid #ccc;
-    border-bottom-color: transparent; /* Hide border on the active tab */
-    background-color: #f8f8f8;
-    position: relative;
-    top: 1px; /* Lift the active tab slightly to merge with the content below */
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for active tab */
-    transform: scale(1.05); /* Slightly enlarge the active tab */
-}
+
 
 .modal-footer {
     display: flex;
@@ -989,15 +993,41 @@ button:disabled::after {
     align-items: center;
     height: 100vh !important;
     padding: 0 !important;
-    background: hsla(195, 86%, 50%, 1);
+    /* background: hsla(195, 86%, 50%, 1);
     background: linear-gradient(90deg, hsla(195, 86%, 50%, 1) 0%, hsla(236, 93%, 65%, 1) 100%);
     background: -moz-linear-gradient(90deg, hsla(195, 86%, 50%, 1) 0%, hsla(236, 93%, 65%, 1) 100%);
     background: -webkit-linear-gradient(90deg, hsla(195, 86%, 50%, 1) 0%, hsla(236, 93%, 65%, 1) 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#12B3EB", endColorstr="#5460F9", GradientType=1 );
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#12B3EB", endColorstr="#5460F9", GradientType=1 ); */
+    background: none !important;
 }
-.login-page .x-type-row-container {
-    width: 70% !important;
-}
+
 .login-page .alert-danger {
     margin-top: 30px;
+}
+.login-page .container-fluid {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100% !important;
+}
+.login-bg{
+    height: 100%;
+    width: 100%;
+}
+.login-bg .row {
+    padding: 0 !important;
+}   
+.login-page #x_element_page_1_1, #x_element_page_1_16 {
+    height: 100vh !important;
+    padding: 0;
+}
+.login-page .t-image{
+    width: 100%;
+    height: 100%;
+}
+
+.login-page #x_element_page_1_2 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
