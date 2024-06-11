@@ -10,7 +10,7 @@
     --black: #333333; /* Dark Grey */
     --light-bg: #3a6bf52b;
     --border-color: #dddddd;
-    --light-shadow-bg:#ecf0f1;
+    --light-shadow-bg: #ecf0f1;
 }
 
 /* Custom scrollbars */
@@ -32,7 +32,7 @@
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background:  var(--light-shadow-bg);
+    background: var(--light-shadow-bg);
 }
 
 /* Firefox */
@@ -66,7 +66,9 @@
     padding: 20px 15px !important;
     background: var(--white) !important;
     margin: 0 0 30px 0px !important;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+    box-shadow:
+        0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
 }
 .custom-header-class .fa-search {
     display: none;
@@ -92,11 +94,11 @@
     border-radius: 10px !important;
 }
 
-.card,.af-card-component:hover {
+.card,
+.af-card-component:hover {
     box-shadow: 0 4px 10px #cacaca;
     transform: translateY(-5px);
 }
-
 
 .card i {
     background: var(--light-bg);
@@ -185,7 +187,9 @@ a {
     background-color: var(--white);
     padding: 10px;
     border: none !important;
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important; 
+    box-shadow:
+        0 4px 6px -1px rgba(0, 0, 0, 0.1),
+        0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
 }
 #sidebar .avatar {
     background-color: var(--primary-color);
@@ -193,10 +197,9 @@ a {
     text-align: center;
     margin-bottom: 30px !important;
 }
-#sidebar .avatar img {
+/* #sidebar .avatar img {
     filter: brightness(20);
-}
-
+} */
 
 .menu .avatar.hide-logo img {
     margin: auto !important;
@@ -224,7 +227,6 @@ table .btn {
     width: fit-content !important;
     background-image: none !important;
 }
-
 
 .super-admin-layout-container .orglogo {
     max-height: 150px !important;
@@ -276,7 +278,6 @@ table td {
 table .btn-success {
     background: #ecf0f1 !important;
 }
-
 
 .data-table {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -336,12 +337,12 @@ table .btn-success {
     color: var(--white) !important;
     background: var(--primary-color) !important;
     background-image: none;
-    margin: 0 5px ;
+    margin: 0 5px;
 }
-.t-pagecontainer{
+.t-pagecontainer {
     padding: 15px;
 }
-#x_element_page_1{
+#x_element_page_1 {
     padding: 0 !important;
 }
 .tb-no-record-found {
@@ -466,8 +467,6 @@ table .btn-success {
     border-bottom: 1px solid var(--primary-color) !important;
 }
 
-
-
 /* ------------------------------------------------------------------------------------------------------- */
 /* acct-admin-layout css */
 .acct-admin-layout .navbar-nav .item a span,
@@ -496,11 +495,14 @@ table .btn-success {
     font-size: 14px;
 }
 
-.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus {
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
     background-color: var(--light-shadow-bg) !important;
     color: var(--black);
 }
-.dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus{
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
     background-color: var(--light-shadow-bg) !important;
     color: var(--primary-color);
 }
@@ -522,7 +524,7 @@ table .btn-success {
     margin: 0;
     padding: 10px;
 }
-.acct-admin-layout{
+.acct-admin-layout {
     padding: 0px;
     background: var(--white);
 }
@@ -534,10 +536,10 @@ table .btn-success {
     z-index: -1 !important;
     padding: 5px 0 !important;
 }
-#x_element_layout_4_16 #x_element_layout_4_17 p{
+#x_element_layout_4_16 #x_element_layout_4_17 p {
     margin: 0;
 }
-.sa-footer p{
+.sa-footer p {
     margin: 0 !important;
 }
 .stats-card {
@@ -632,8 +634,6 @@ table .btn-success {
         color 0.3s ease,
         transform 0.3s ease; /* Transition for color and transform */
 }
-
-
 
 .modal-footer {
     display: flex;
@@ -856,7 +856,7 @@ button:disabled::after {
 
 .btn:hover,
 .btn:focus {
-    box-shadow:none !important;
+    box-shadow: none !important;
     border: none;
 }
 
@@ -930,7 +930,7 @@ button:disabled::after {
     font-weight: 500 !important;
     color: var(--primary-color) !important;
     border: none !important;
-    outline: none !important; 
+    outline: none !important;
     box-shadow: none !important;
     font-weight: 600;
 }
@@ -985,19 +985,20 @@ button:disabled::after {
     margin: 0 !important;
     width: 100% !important;
 }
-.login-bg{
+.login-bg {
     width: 100% !important;
     max-height: 100%;
     height: 100%;
 }
 .login-bg .row {
     padding: 0 !important;
-}   
-.login-page #x_element_page_1_1, #x_element_page_1_16 {
+}
+.login-page #x_element_page_1_1,
+#x_element_page_1_16 {
     height: 100vh !important;
     padding: 0;
 }
-.login-page .t-image{
+.login-page .t-image {
     width: 100%;
     height: 100%;
     display: flex;
@@ -1014,7 +1015,7 @@ button:disabled::after {
     border-radius: 0;
 }
 
-.x-page-container{
+.x-page-container {
     background-color: var(--white);
     background: var(--white);
 }
@@ -1025,13 +1026,14 @@ button:disabled::after {
     margin: 10px 0;
     border-radius: 5px;
 }
-.card-row-class{
-    margin: 0px 0 20px 0 !important; 
+.card-row-class {
+    margin: 0px 0 20px 0 !important;
 }
-#x_element_page_25_1, #x_element_page_200_1{
+#x_element_page_25_1,
+#x_element_page_200_1 {
     border: 1px solid var(--border-color) !important;
     border-radius: 5px !important;
-    margin:30px 0 0  0 !important;;
+    margin: 30px 0 0 0 !important;
     padding: 15px 10px !important;
 }
 
@@ -1039,4 +1041,8 @@ button:disabled::after {
     padding: 0 !important;
     height: auto !important;
     border: none !important;
+}
+
+.login-row #x_element_page_1_2 {
+    box-shadow: 0px 5px 10px 5px #e7e7e7;
 }
