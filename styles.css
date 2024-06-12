@@ -53,14 +53,8 @@
 }
 .img-responsive {
     transition: 0.4s all;
-    transition: transform 0.3s ease-in-out;
-    transform-origin: left center;
 }
-/* .img-responsive:hover {
-    transform: scale(3);
-    position: relative;
-    z-index: 999999;
-} */
+
 .menu-header {
     margin: 0 !important;
     padding: 20px 15px !important;
@@ -353,11 +347,11 @@ table .btn-success {
     height: 120px;
     font-size: 18px;
     text-transform: capitalize;
-    border: none !important;
     box-shadow: none !important;
     background: var(--white);
     border-radius: 10px !important;
     transition: 0.5s;
+    border: 1px solid #e7e7e7 !important;
 }
 
 /* Footer CSS  */
@@ -794,6 +788,7 @@ button:disabled::after {
     cursor: pointer;
     transition: box-shadow 0.2s;
     outline: none !important;
+    width: fit-content !important;
 }
 
 .btn::-moz-focus-inner {
@@ -1065,4 +1060,8 @@ button:disabled::after {
 }
 .super-admin-layout-container #x_element_page_25_2 h4{
    margin: 0px 0 20px 0 !important;
+}
+.btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle) {
+    border-bottom-right-radius: 4px !important;
+    border-top-right-radius: 4px !important;
 }
