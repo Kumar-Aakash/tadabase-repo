@@ -50,6 +50,7 @@
     font-size: 24px;
     margin-bottom: 15px;
     color: var(--black);
+    margin-top: 0;
 }
 .img-responsive {
     transition: 0.4s all;
@@ -85,14 +86,29 @@
 .af-card-component {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15) !important;
     transition: 0.5s;
-    /* border-left: 5px solid var(--highlight-color) !important; */
     border-radius: 10px !important;
 }
 
-.card,
+.card-footer{
+    font-size: 14px;
+    font-weight: bold;
+    text-wrap: wrap !important;
+}
+.t-card-footer span{
+    font-size: 14px;
+    font-weight: bold;
+    text-wrap: wrap !important;
+}
+
+
 .af-card-component:hover {
     box-shadow: 0 4px 10px #cacaca;
-    transform: translateY(-5px);
+    transform: translateY(-10px);
+}
+
+.card:hover {
+    box-shadow: 0 4px 10px #cacaca;
+    transform: translateY(-10px);
 }
 
 .card i {
@@ -110,7 +126,7 @@
     margin-right: 15px;
 }
 .card p {
-    font-size: 13px;
+    font-size: 15px;
     font-weight: bold;
     margin-top: 20px;
     text-wrap: wrap !important;
@@ -255,7 +271,7 @@ table {
 table thead th {
     background-color: var(--light-bg) !important;
     color: var(--black);
-    font-size: 13px;
+    font-size: 14px;
 }
 
 table td {
@@ -515,7 +531,7 @@ table .btn-success {
 }
 .acct-admin-layout .acct-admin-footer p {
     text-align: center;
-    font-size: 13px;
+    font-size: 14px;
     margin: 0;
     padding: 10px;
 }
@@ -539,14 +555,14 @@ table .btn-success {
 }
 .stats-card {
     background-color: #fff;
-    border-radius: 10px;
+    border-radius: 20px;
     box-shadow:
         rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
         rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
     border: none;
     text-align: center;
     border-left: 5px solid var(--primary-color);
-    height: 160px;
+    min-height: 160px;
 }
 
 .stats-card:hover {
@@ -568,21 +584,23 @@ table .btn-success {
 }
 
 .stats-card-header {
-    color: var(--primary-color);
-    font-size: 13px;
+    color: var(--text-color);
+    font-size: 14px;
+    font-weight: bold;
     background-color: var(--secondary-color);
     padding: 10px 5px;
+    border-radius: 20px 20px 0 0;
 }
 
 .stats-card-body h1 {
     color: var(--primary-color);
-    font-size: 36px; /* Larger font size for emphasis */
+    font-size: 36px;
     margin: 10px 0;
 }
 
 .stats-card-body p {
-    color: gray;
-    font-size: 12px;
+    color: var(--text-color);
+    font-size: 14px;
     margin-bottom: 5px;
     text-wrap: wrap !important;
 }
@@ -786,7 +804,7 @@ button:disabled::after {
     font-weight: 500;
     overflow: hidden;
     cursor: pointer;
-    transition: box-shadow 0.2s;
+    transition: box-shadow 0.5s;
     outline: none !important;
     width: fit-content !important;
 }
@@ -854,6 +872,7 @@ button:disabled::after {
 .btn:focus {
     box-shadow: none !important;
     border: none;
+    opacity: 0.8;
 }
 
 .btn:hover::before,
@@ -1064,4 +1083,15 @@ button:disabled::after {
 .btn-group>.btn:first-child:not(:last-child):not(.dropdown-toggle) {
     border-bottom-right-radius: 4px !important;
     border-top-right-radius: 4px !important;
+}
+
+.btn-form-page-prev{
+    float: right;
+}
+.btn-block+.btn-block{
+    margin: 0 !important;
+}
+
+#x_element_page_200_2 .col-md-4{
+    margin: 10px 0;
 }
