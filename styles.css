@@ -1013,7 +1013,7 @@ button:disabled::after {
     border: 1px solid var(--border-color) !important;
     border-radius: 5px !important;
     margin: 30px 0 0 0 !important;
-    padding: 15px 10px !important;
+    padding: 0px 10px 10px 0 !important;
 }
 
 .acct-admin-layout .card {
@@ -1058,4 +1058,10 @@ button:disabled::after {
 
 #x_element_page_200_2 .col-md-4{
     margin: 10px 0;
+}
+
+.group-wrapper .table-wrap{
+    padding-right: 10px !important;
+    padding-left: 10px !important;
+    padding-bottom: 10px !important;
 }
