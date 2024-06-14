@@ -1075,3 +1075,10 @@ button:disabled::after {
     padding-left: 10px !important;
     padding-bottom: 10px !important;
 }
+
+.acct-admin-layout .navbar{
+    display: none;
+}
+.acct-admin-layout .menu-header{
+    margin-top: -15px !important;
+}
