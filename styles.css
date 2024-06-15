@@ -146,11 +146,15 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 /* General Styles */
-body {
+body,html {
     background-color: var(--background-color);
     color: var(--text-color);
     font-family: var(--font-family);
     line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 
@@ -265,11 +269,7 @@ table .btn-success {
     border-radius: 8px;
     overflow: hidden;
 }
-#x_element_layout_1_18 {
-    box-shadow:
-        rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
-        rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
-}
+
 
 #sidebarCollapse {
     width: 100% !important;
@@ -340,15 +340,7 @@ table .btn-success {
     border: 1px solid #e7e7e7 !important;
 }
 
-/* Footer CSS  */
-#x_element_layout_1_18 p {
-    margin: 0 !important;
-    padding: 10px;
-    font-size: 16px;
-}
-#x_element_layout_1_18 {
-    border-top: 1px solid var(--white);
-}
+
 
 /* Modern list styles */
 .modern-list ul,
@@ -512,11 +504,24 @@ table .btn-success {
 .acct-admin-footer {
     box-shadow: 10px 25px 20px 15px #333333;
 }
+.container-fluid{
+    position: relative;
+}
 
 .sa-footer {
-    z-index: -1 !important;
-    padding: 5px 0 !important;
+    z-index: 99999 !important;
+    padding: 10px !important;
+    position: fixed;
+    bottom: 0;
+    width: calc(100% - 280px);
+    box-shadow: rgba(14, 63, 126, 0.06) 0px 0px 0px 1px, rgba(42, 51, 70, 0.03) 0px 1px 1px -0.5px, rgba(42, 51, 70, 0.04) 0px 2px 2px -1px, rgba(42, 51, 70, 0.04) 0px 3px 3px -1.5px, rgba(42, 51, 70, 0.03) 0px 5px 5px -2.5px, rgba(42, 51, 70, 0.03) 0px 10px 10px -5px, rgba(42, 51, 70, 0.03) 0px 24px 24px -8px;    background: var(--white) !important;
 }
+.sp-footer p{
+    font-size: 14px !important;
+    background: #FFF;
+    margin: 0 !important;
+}
+
 #x_element_layout_4_16 #x_element_layout_4_17 p {
     margin: 0;
 }
@@ -1081,4 +1086,8 @@ button:disabled::after {
 }
 .acct-admin-layout .menu-header{
     margin-top: -15px !important;
+}
+
+.fixed-table-layout .table{
+    table-layout: fixed;
 }
