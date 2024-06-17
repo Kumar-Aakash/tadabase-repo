@@ -104,9 +104,11 @@ h1,h2,h3,h4,h5,h6 {
     text-wrap: wrap !important;
 }
 .t-card-footer span{
+    color: var(--text-color);
     font-size: 14px;
-    font-weight: bold;
+    margin-bottom: 5px;
     text-wrap: wrap !important;
+    font-weight: 100 !important;
 }
 
 /* 
@@ -540,7 +542,7 @@ table .btn-success {
     border: none;
     text-align: center;
     border-left: 5px solid var(--primary-color);
-    min-height: 160px;
+    min-height: 170px;
     transition: 0.4s;
 }
 
@@ -566,13 +568,67 @@ table .btn-success {
 
 .stats-card-header {
     color: var(--text-color);
-    font-size: 14px;
+    font-size: 14px !important;
     font-weight: bold;
     background-color: var(--secondary-color);
     padding: 10px 5px;
     border-radius: 20px 20px 0 0;
 }
 
+.acct-admin-layout .t-card-header{
+    color: var(--text-color);
+    font-weight: bold;
+    background-color: var(--secondary-color);
+    padding: 10px 5px;
+    border-radius: 20px 20px 0 0;
+}
+.acct-admin-layout .t-card-footer{
+    color: var(--text-color) !important;
+    font-size: 14px !important;
+    margin-bottom: 5px !important;
+    text-wrap: wrap !important;
+}
+.acct-admin-layout .stats-card .t-card-value {
+    color: var(--primary-color) !important;
+    font-size: 36px !important;
+    margin: 10px 0 !important;
+    font-family: 'Poppins';
+    font-weight: 600;
+}
+.acct-admin-layout .stats-card .t-card-value span {
+    line-height: 36px;
+}
+.acct-admin-layout .af-card-component{
+    border-radius: none;
+    background-color: transparent;
+    margin: initial !important;
+    position: initial !important;
+    border: none !important;
+    overflow: initial !important;
+}
+.acct-admin-layout .af-card-component .footer{
+    border: none !important;
+    margin: 0 !important;
+    padding: 0px 8px 5px 0 !important;
+    border-radius: 20px;
+}
+.acct-admin-layout .af-card-component .con {
+    padding: 0 !important;
+    font-size: 36px !important;
+}
+.acct-admin-layout .af-card-component .t-card-header {
+    color: var(--text-color);
+    font-size: 14px !important;
+    font-weight: bold;
+    background-color: var(--secondary-color);
+    padding: 10px 5px;
+    border-radius: 20px 20px 0 0;
+    border-bottom: 0 !important;
+}
+.acct-admin-layout .af-card-component .t-card-header span{
+    color: var(--text-color);
+    font-size: 14px !important;
+}
 
 .stats-card-body h1 {
     color: var(--primary-color);
@@ -1073,9 +1129,6 @@ button:disabled::after {
     margin: 0 !important;
 }
 
-#x_element_page_200_2 .col-md-4{
-    margin: 10px 0;
-}
 
 .group-wrapper .table-wrap{
     padding-right: 10px !important;
