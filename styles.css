@@ -1035,7 +1035,6 @@ button:disabled::after {
 }
 
 .acct-admin-layout .card {
-    padding: 0 !important;
     height: auto !important;
     border: none !important;
 }
