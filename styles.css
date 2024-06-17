@@ -515,7 +515,7 @@ table .btn-success {
     bottom: 0;
     width: calc(100% - 280px);
     border-radius: 5px;
-    border-top: 1px solid var(--border-color)!important;
+    border: 1px solid var(--border-color)!important;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1) !important;
 }
 
@@ -1054,7 +1054,7 @@ button:disabled::after {
     font-size: 14px !important;
 }
 .super-admin-layout-container #x_element_page_25_2 .col-md-4, h4{
-   margin: 8px 0 8px 0 !important;
+   margin:  0 !important;
    display: flex;
    align-items: center;
    justify-content: flex-start;
