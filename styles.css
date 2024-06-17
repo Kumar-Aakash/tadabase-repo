@@ -509,7 +509,7 @@ table .btn-success {
 }
 
 .sa-footer {
-    z-index: 99999 !important;
+    z-index: 1 !important;
     padding: 10px !important;
     position: fixed;
     bottom: 0;
