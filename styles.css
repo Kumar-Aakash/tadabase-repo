@@ -289,7 +289,9 @@ table .btn-success {
 }
 
 .td-data-link {
-    border-radius: 5px;
+    border-radius: 4px;
+    padding: 8px 10px !important;
+    font-weight: 500 !important;
 }
 
 .table-actions {
@@ -301,7 +303,6 @@ table .btn-success {
 }
 .table-wrap {
     overflow-x: auto;
-    /* padding: 0px 15px 15px 15px; */
     padding: 0 !important;
 }
 
@@ -967,12 +968,11 @@ button:disabled::after {
 .x-type-print-button .fullwidth {
     background-color: var(--light-shadow-bg) !important;
     width: 100% !important;
-    font-weight: 500 !important;
     color: var(--primary-color) !important;
     border: none !important;
     outline: none !important;
     box-shadow: none !important;
-    font-weight: 600;
+    font-weight: 600 !important;
 }
 
 #x_element_page_25_6 {
@@ -1158,21 +1158,23 @@ h4 {
 
 .timeline__content {
     border: none !important;
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px !important;
+    box-shadow:
+        rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+        rgba(0, 0, 0, 0.1) 0px 0px 1px 0px !important;
     border-radius: 10px;
 }
 
-.timeline__field span{
+.timeline__field span {
     font-weight: bold;
 }
 
-#x_element_page_264_1{
+#x_element_page_264_1 {
     border: 1px solid var(--border-color);
     margin: 50px 0px 10px 10px !important;
     border-radius: 10px;
     padding: 5px 0 20px 0 !important;
 }
 
-.ledger-id{
+.ledger-id {
     margin-bottom: 20px !important;
 }
