@@ -898,13 +898,10 @@ button:disabled::after {
 .btn:focus {
     box-shadow: none !important;
     border: none;
-    opacity: 0.8;
+    opacity: 1 !important;
+    filter: brightness(0.90);
 }
 
-.btn:hover::before,
-.btn:focus::before {
-    opacity: 0.08;
-}
 
 .btn:active {
     box-shadow:
