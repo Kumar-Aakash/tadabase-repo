@@ -135,6 +135,9 @@ h6 {
     margin-top: 20px;
     text-wrap: wrap !important;
 }
+.acct-admin-layout .card p{
+    margin: 0 0 10px 0 !important;
+}
 .card h2 {
     font-size: 30px;
     font-weight: bold;
@@ -618,11 +621,16 @@ table .btn-success {
     font-size: 14px !important;
 }
 
+.stats-card-body{
+    padding: 0 10px;
+}
+
 .stats-card-body h1 {
     color: var(--primary-color);
     font-size: 36px;
     margin: 10px 0;
 }
+
 
 .stats-card-body p {
     color: var(--text-color);
@@ -1079,12 +1087,16 @@ button:disabled::after {
     /* border: none !important; */
 }
 
+#x_element_page_234_7{
+    margin:0px 0 30px 0!important;
+}
+
 .login-row #x_element_page_1_2 {
     box-shadow: 0px 5px 10px 5px #e7e7e7;
 }
 
 .super-admin-layout-container #x_element_page_25_2 i {
-    font-size: 20px;
+    font-size: 16px !important;
     font-weight: bolder !important;
     margin-right: 10px;
 }
