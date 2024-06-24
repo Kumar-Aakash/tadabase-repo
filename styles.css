@@ -93,7 +93,7 @@ h6 {
     min-height: 120px;
     margin-bottom: 15px;
     transition: 0.5s;
-    border-left: 5px solid var(--highlight-color);
+    border-left: 5px solid var(--highlight-color) !important;
     cursor: pointer;
 }
 
@@ -1076,7 +1076,7 @@ button:disabled::after {
 
 .acct-admin-layout .card {
     height: auto !important;
-    border: none !important;
+    /* border: none !important; */
 }
 
 .login-row #x_element_page_1_2 {
