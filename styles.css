@@ -887,7 +887,7 @@ button:disabled::after {
 
 .btn-primary,
 .btn-default,
-.btn-outline {
+.btn-outline,.af-form-submit {
     background-color: var(--primary-color) !important; /* Blue */
     color: var(--white) !important;
 }
@@ -903,9 +903,21 @@ button:disabled::after {
 }
 
 .btn-success {
-    background-color: transparent !important; /* Green */
+    background-color: transparent !important;
     color: var(--primary-color) !important;
     border: 1px solid var(--primary-color) !important;
+}
+
+.af-form-submit {
+    background-color: var(--primary-color) !important; /* Blue */
+    color: var(--white) !important;
+}
+.btn-form-page-prev{
+    background-color: var(--light-shadow-bg) !important;
+    color: var(--primary-color) !important;
+    box-shadow: none !important;
+    border: none !important;
+    border-radius: 5px;
 }
 
 .btn-warning {
