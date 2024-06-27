@@ -1,5 +1,5 @@
 :root {
-    --primary-color: #3a6bf5; /* Vivid Blue */
+    --primary-color: #1552ff; /* Vivid Blue */
     --secondary-color: #ecf0f1; /* Light Grey */
     --accent-color: #e74c3c; /* Red */
     --background-color: #ecf0f1; /* Light Grey */
@@ -103,7 +103,7 @@ h6 {
     min-height: 120px;
     margin-bottom: 15px;
     transition: 0.5s;
-    border-left: 5px solid var(--highlight-color) !important;
+    border-left: 5px solid #1552ff !important;
     cursor: pointer;
 }
 
@@ -907,10 +907,16 @@ button:disabled::after {
     background-color: rgb(23, 162, 184) !important; /* Cyan */
     color: var(--white) !important;
 }
+.btn-info:hover {
+    background-color: #046a7a!important; /* Cyan */
+}
 
 .btn-danger {
     background-color: rgb(220, 53, 69) !important; /* Red */
     color: var(--white) !important;
+}
+.btn-danger:hover {
+    background-color: rgb(235, 21, 42) !important; /* Red */
 }
 
 .btn-success {
@@ -918,6 +924,27 @@ button:disabled::after {
     color: var(--primary-color) !important;
     border: 1px solid var(--primary-color) !important;
 }
+
+.btn:hover,
+.btn:focus {
+    box-shadow: none !important;
+    border: none;
+    opacity: 1 !important;
+    filter: none !important;
+}
+
+.btn-primary:hover,
+.t-export-button:hover,
+.btn-form-page-prev:hover,
+.btn-success:hover,
+.af-form-submit:hover {
+    background-color: #0d2a7a !important;
+}
+
+.badge{
+    height: fit-content !important;
+}
+
 .modal-footer .btn-success {
     background-color: var(--light-shadow-bg) !important;
     color: var(--primary-color) !important;   
@@ -929,7 +956,7 @@ button:disabled::after {
 }
 
 .af-form-submit {
-    background-color: var(--primary-color) !important; /* Blue */
+    background-color: var(--primary-color) !important; 
     color: var(--white) !important;
 }
 .btn-form-page-prev{
@@ -941,17 +968,14 @@ button:disabled::after {
 }
 
 .btn-warning {
-    background-color: rgb(255, 193, 7) !important; /* Yellow */
+    background-color: rgb(255, 193, 7) !important;
+    color: var(--white) !important;
+}
+.btn-warning:hover {
+    background-color: rgb(214, 162, 7) !important;
     color: var(--white) !important;
 }
 
-.btn:hover,
-.btn:focus {
-    box-shadow: none !important;
-    border: none;
-    opacity: 1 !important;
-    filter: brightness(0.90);
-}
 
 
 .btn:active {
@@ -1289,4 +1313,12 @@ h4 {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+input::placeholder,
+textarea::placeholder {
+  color: #888 !important;  
+}
+.modal-body{
+    max-height: 70vh !important;
+    overflow: auto !important;
 }
