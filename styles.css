@@ -1307,3 +1307,9 @@ textarea::placeholder {
 #x_element_page_234_5 {
   padding: 0 !important;
 }
+
+.input-group-btn .btn{
+    height: 38px !important;
+    display: flex;
+    align-items: center;
+}
