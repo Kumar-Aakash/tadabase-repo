@@ -914,6 +914,7 @@ button:disabled::after {
 .btn-success:hover,
 .af-form-submit:hover {
   background-color: #0d2a7a !important;
+  color: var(--white) !important;
 }
 
 .badge {
@@ -1312,4 +1313,17 @@ textarea::placeholder {
     height: 38px !important;
     display: flex;
     align-items: center;
+}
+
+.modal-dialog .af-form-submit,
+.modal-dialog .button-success {
+  border: 1px solid var(--primary-color) !important;
+  color: var(--primary-color) !important;
+  background-color: transparent !important;
+}
+.modal-dialog .btn-form-page-next
+{
+  border: 1px solid var(--primary-color) !important;
+  color: var(--primary-color) !important;
+  background-color: transparent !important;
 }
