@@ -1327,3 +1327,8 @@ textarea::placeholder {
   color: var(--primary-color) !important;
   background-color: transparent !important;
 }
+
+.admin-layout-type{
+  font-size: 20px;
+  font-weight: 600;
+}
