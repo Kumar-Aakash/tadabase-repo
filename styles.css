@@ -1,11 +1,11 @@
 :root {
-  --primary-color: #1552ff; 
+  --primary-color: #1552ff;
   --secondary-color: #ecf0f1;
   --accent-color: #e74c3c;
   --background-color: #ecf0f1;
-  --text-color: #2c3e50; 
+  --text-color: #2c3e50;
   --highlight-color: #3498db;
-  --font-family: "Poppins", sans-serif; 
+  --font-family: "Poppins", sans-serif;
   --white: #fff;
   --black: #333333;
   --light-bg: #3a6bf52b;
@@ -83,7 +83,8 @@ h6 {
   padding: 20px 15px !important;
   background: var(--white) !important;
   margin: 0 0 30px 0px !important;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
 }
 .custom-header-class .fa-search {
@@ -194,7 +195,8 @@ a {
   background-color: var(--white);
   padding: 10px;
   border: none !important;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1),
+  box-shadow:
+    0 4px 6px -1px rgba(0, 0, 0, 0.1),
     0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
 }
 #sidebar .avatar {
@@ -221,7 +223,9 @@ table .btn {
   display: inline-block;
   cursor: pointer;
   border-radius: 5px !important;
-  transition: background-color 0.3s, box-shadow 0.3s;
+  transition:
+    background-color 0.3s,
+    box-shadow 0.3s;
   outline: none;
   position: relative;
   overflow: hidden;
@@ -375,7 +379,9 @@ table .btn-success {
   border-radius: 5px;
   background-color: var(--white);
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s, transform 0.3s;
+  transition:
+    background-color 0.3s,
+    transform 0.3s;
 }
 
 .modern-list ul li::before {
@@ -550,7 +556,8 @@ table .btn-success {
 .stats-card {
   background-color: #fff;
   border-radius: 20px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
     rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
   border: none;
   text-align: center;
@@ -681,7 +688,9 @@ table .btn-success {
 .nav-tabs li {
   cursor: pointer;
   padding: 5px;
-  transition: background-color 0.3s ease, color 0.3s ease; /* Transition for color and background */
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease; /* Transition for color and background */
 }
 
 /* General styling for tabs */
@@ -703,7 +712,9 @@ table .btn-success {
   padding: 8px 16px;
   text-decoration: none;
   color: var(--text-color);
-  transition: color 0.3s ease, transform 0.3s ease; /* Transition for color and transform */
+  transition:
+    color 0.3s ease,
+    transform 0.3s ease; /* Transition for color and transform */
 }
 
 .modal-footer {
@@ -752,7 +763,9 @@ button {
   text-overflow: ellipsis;
   color: var(--white);
   background-color: var(--primary-color);
-  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+  box-shadow:
+    0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 2px 2px 0 rgba(0, 0, 0, 0.14),
     0 1px 5px 0 rgba(0, 0, 0, 0.12);
   font-size: 14px;
   font-weight: 500;
@@ -791,12 +804,16 @@ button::after {
   background-color: var(--white);
   opacity: 0;
   transform: translate(-50%, -50%) scale(1);
-  transition: opacity 1s, transform 0.5s;
+  transition:
+    opacity 1s,
+    transform 0.5s;
 }
 
 button:hover,
 button:focus {
-  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14),
+  box-shadow:
+    0 2px 4px -1px rgba(0, 0, 0, 0.2),
+    0 4px 5px 0 rgba(0, 0, 0, 0.14),
     0 1px 10px 0 rgba(0, 0, 0, 0.12);
 }
 
@@ -810,8 +827,10 @@ button:hover:focus::before {
 }
 
 button:active {
-  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
-    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  box-shadow:
+    0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14),
+    0 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
 
 button:active::after {
@@ -846,7 +865,9 @@ button:disabled::after {
   text-align: center;
   text-overflow: ellipsis;
   color: var(--white);
-  box-shadow: 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+  box-shadow:
+    0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 2px 2px 0 rgba(0, 0, 0, 0.14),
     0 1px 5px 0 rgba(0, 0, 0, 0.12);
   font-size: 14px;
   font-weight: 500;
@@ -883,7 +904,9 @@ button:disabled::after {
   height: 32px;
   opacity: 0;
   transform: translate(-50%, -50%) scale(1);
-  transition: opacity 1s, transform 0.5s;
+  transition:
+    opacity 1s,
+    transform 0.5s;
 }
 
 .btn-primary,
@@ -970,8 +993,10 @@ button:disabled::after {
 }
 
 .btn:active {
-  box-shadow: 0 5px 5px -3px rgba(0, 0, 0, 0.2),
-    0 8px 10px 1px rgba(0, 0, 0, 0.14), 0 3px 14px 2px rgba(0, 0, 0, 0.12);
+  box-shadow:
+    0 5px 5px -3px rgba(0, 0, 0, 0.2),
+    0 8px 10px 1px rgba(0, 0, 0, 0.14),
+    0 3px 14px 2px rgba(0, 0, 0, 0.12);
 }
 
 .btn:active::after {
@@ -1009,18 +1034,14 @@ button:disabled::after {
   border: 1px solid var(--border-color) !important;
 }
 
-.select2-container--classic
-  .select2-selection--single
-  .select2-selection__arrow {
+.select2-container--classic .select2-selection--single .select2-selection__arrow {
   padding: 19px !important;
 }
 .has-add-new-one .btn-add-new-option {
   right: -5px !important;
   min-width: 40px;
 }
-.select2-container--classic
-  .select2-selection--single
-  .select2-selection__clear {
+.select2-container--classic .select2-selection--single .select2-selection__clear {
   font-size: 24px !important;
   font-weight: 100 !important;
   margin-right: 20px !important;
@@ -1233,7 +1254,8 @@ h4 {
 
 .timeline__content {
   border: none !important;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 0px 5px 0px,
     rgba(0, 0, 0, 0.1) 0px 0px 1px 0px !important;
   border-radius: 10px;
 }
@@ -1358,4 +1380,9 @@ textarea::placeholder {
 
 #x_element_page_264_7 .t-col {
   box-sizing: content-box;
+}
+#x_element_page_120_1 {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
 }
